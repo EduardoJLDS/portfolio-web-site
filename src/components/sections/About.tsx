@@ -1,26 +1,29 @@
 import { Code2, Palette, Rocket, Users } from 'lucide-react';
+import { useLanguage } from '../../hooks';
 
 export default function About() {
+  const { t } = useLanguage();
+
   const highlights = [
     {
       icon: Code2,
-      title: 'Clean Code',
-      description: 'Writing maintainable and scalable code with best practices'
+      title: t('about.highlights.cleanCode.title'),
+      description: t('about.highlights.cleanCode.description')
     },
     {
       icon: Palette,
-      title: 'UI/UX Focus',
-      description: 'Creating beautiful and intuitive user experiences'
+      title: t('about.highlights.uiux.title'),
+      description: t('about.highlights.uiux.description')
     },
     {
       icon: Rocket,
-      title: 'Performance',
-      description: 'Optimizing applications for speed and efficiency'
+      title: t('about.highlights.performance.title'),
+      description: t('about.highlights.performance.description')
     },
     {
       icon: Users,
-      title: 'Team Player',
-      description: 'Collaborative approach with strong communication skills'
+      title: t('about.highlights.teamPlayer.title'),
+      description: t('about.highlights.teamPlayer.description')
     }
   ];
 
@@ -32,7 +35,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              About <span className="text-gradient">Me</span>
+              {t('about.title')} <span className="text-gradient">{t('about.titleHighlight')}</span>
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           </div>
@@ -40,41 +43,36 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a passionate <span className="text-primary-400 font-semibold">Frontend Developer</span> with
-                a strong focus on building modern, responsive, and user-centric web applications. My journey in
-                web development has been driven by a genuine love for creating seamless digital experiences.
+                {t('about.description1')}
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                With expertise in <span className="text-accent-400 font-semibold">React, TypeScript, and modern CSS frameworks</span>,
-                I transform complex requirements into elegant solutions. I'm constantly learning and adapting to new
-                technologies to stay at the forefront of web development.
-              </p>
+                {t('about.description2')}
+              </p> 
               <p className="text-lg text-gray-300 leading-relaxed">
-                My proactive approach and attention to detail ensure that every project I work on not only meets
-                technical requirements but also delivers an exceptional user experience.
+                {t('about.description3')}
               </p>
             </div>
 
             <div className="card-glass p-8">
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Experience</span>
-                  <span className="text-primary-400 font-semibold">3+ Years</span>
+                  <span className="text-gray-300">{t('about.experience')}</span>
+                  <span className="text-primary-400 font-semibold">3+ {t('common.years')}</span>
                 </div>
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Projects Completed</span>
-                  <span className="text-primary-400 font-semibold">25+</span>
+                  <span className="text-gray-300">{t('about.projectsCompleted')}</span>
+                  <span className="text-primary-400 font-semibold">10+</span>
                 </div>
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Technologies Mastered</span>
+                  <span className="text-gray-300">{t('about.technologiesMastered')}</span>
                   <span className="text-primary-400 font-semibold">15+</span>
                 </div>
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300">Location</span>
-                  <span className="text-primary-400 font-semibold">Available Remote</span>
+                  <span className="text-gray-300">{t('about.location')}</span>
+                  <span className="text-primary-400 font-semibold">{t('about.availableRemote')}</span>
                 </div>
               </div>
             </div>

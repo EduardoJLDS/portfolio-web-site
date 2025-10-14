@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Eduardo José Lara Da Silva",
+    "title": "Frontend Developer | React & TypeScript",
+    "description": "Building dynamic and scalable web experiences with modern technologies. Passionate about creating intuitive user interfaces that users love.",
+    "downloadCV": "Download CV",
+    "hireMe": "Hire Me",
+    "seeMyWork": "See My Work"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Me",
+    "description1": "I'm a passionate Frontend Developer with a strong focus on building modern, responsive, and user-centric web applications. My journey in web development has been driven by a genuine love for creating seamless digital experiences.",
+    "description2": "With expertise in React, TypeScript, and modern CSS frameworks, I transform complex requirements into elegant solutions. I'm constantly learning and adapting to new technologies to stay at the forefront of web development.",
+    "description3": "My proactive approach and attention to detail ensure that every project I work on not only meets technical requirements but also delivers an exceptional user experience.",
+    "experience": "Experience",
+    "projectsCompleted": "Projects Completed",
+    "technologiesMastered": "Technologies Mastered",
+    "location": "Location",
+    "availableRemote": "Available Remote",
+    "highlights": {
+      "cleanCode": {
+        "title": "Clean Code",
+        "description": "Writing maintainable and scalable code with best practices"
+      },
+      "uiux": {
+        "title": "UI/UX Focus",
+        "description": "Creating beautiful and intuitive user experiences"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimizing applications for speed and efficiency"
+      },
+      "teamPlayer": {
+        "title": "Team Player",
+        "description": "Collaborative approach with strong communication skills"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills &",
+    "titleHighlight": "Technologies",
+    "description": "Here are the technologies and tools I work with to create amazing web experiences",
+    "legend": {
+      "expert": "Expert — Daily use, can lead projects",
+      "advanced": "Advanced — Work comfortably and autonomously",
+      "intermediate": "Intermediate — Good command, still learning"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend & Database"
+    },
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate"
+    }
+  },
+  "experience": {
+    "title": "Work",
+    "titleHighlight": "Experience",
+    "description": "Professional journey building impactful web solutions",
+    "keyAchievements": "Key Achievements:",
+    "technologiesUsed": "Technologies Used:",
+    "experiences": {
+      "clorian": {
+        "company": "Clorian",
+        "position": "Frontend Developer",
+        "period": "2022 - Present",
+        "location": "Remote",
+        "description": "Leading frontend development initiatives, building scalable React applications with TypeScript. Implemented modern design systems and optimized performance across multiple projects.",
+        "achievements": [
+          "Reduced page load time by 40% through code splitting and lazy loading",
+          "Built reusable component library used across 5+ projects",
+          "Mentored junior developers in React best practices",
+          "Implemented CI/CD pipelines improving deployment efficiency by 60%"
+        ]
+      },
+      "lasVillas": {
+        "company": "Las Villas",
+        "position": "Frontend Developer",
+        "period": "2021 - 2022",
+        "location": "Hybrid",
+        "description": "Developed responsive web applications for real estate management platform. Collaborated with designers and backend teams to deliver seamless user experiences.",
+        "achievements": [
+          "Redesigned main dashboard improving user engagement by 35%",
+          "Integrated RESTful APIs for dynamic content management",
+          "Implemented responsive design supporting all device sizes",
+          "Reduced bug reports by 50% through comprehensive testing"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured",
+    "titleHighlight": "Projects",
+    "description": "A showcase of my recent work and personal projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "contact": {
+    "title": "Get In",
+    "titleHighlight": "Touch",
+    "description": "Ready to start your next project? Let's work together!",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "availability": "Availability"
+    }
+  },
+  "footer": {
+    "description": "Frontend Developer passionate about creating exceptional web experiences.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followMe": "Follow Me",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "years": "Years",
+    "projects": "Projects"
+  }
+}

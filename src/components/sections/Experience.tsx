@@ -1,36 +1,37 @@
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { useLanguage } from '../../hooks';
 
-export default function Experience() {
-  const experiences = [
-    {
-      company: 'Clorian',
-      position: 'Frontend Developer',
-      period: '2022 - Present',
-      location: 'Remote',
-      description: 'Leading frontend development initiatives, building scalable React applications with TypeScript. Implemented modern design systems and optimized performance across multiple projects.',
-      achievements: [
-        'Reduced page load time by 40% through code splitting and lazy loading',
-        'Built reusable component library used across 5+ projects',
-        'Mentored junior developers in React best practices',
-        'Implemented CI/CD pipelines improving deployment efficiency by 60%'
-      ],
-      technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'GraphQL']
-    },
-    {
-      company: 'Las Villas',
-      position: 'Frontend Developer',
-      period: '2021 - 2022',
-      location: 'Hybrid',
-      description: 'Developed responsive web applications for real estate management platform. Collaborated with designers and backend teams to deliver seamless user experiences.',
-      achievements: [
-        'Redesigned main dashboard improving user engagement by 35%',
-        'Integrated RESTful APIs for dynamic content management',
-        'Implemented responsive design supporting all device sizes',
-        'Reduced bug reports by 50% through comprehensive testing'
-      ],
-      technologies: ['React', 'JavaScript', 'Redux', 'Material-UI', 'REST APIs']
-    }
-  ];
+export const Experience: React.FC = () => {
+  const { t, tArray } = useLanguage();
+
+  const getExperiences = () => {
+    // Helper function to safely parse arrays from translations
+  const getAchievements = (companyKey: string): string[] => {
+    const achievementsKey = `experience.experiences.${companyKey}.achievements`;
+    return tArray(achievementsKey);
+  };    return [
+      {
+        company: t('experience.experiences.clorian.company'),
+        position: t('experience.experiences.clorian.position'),
+        period: t('experience.experiences.clorian.period'),
+        location: t('experience.experiences.clorian.location'),
+        description: t('experience.experiences.clorian.description'),
+        achievements: getAchievements('experience.experiences.clorian.achievements'),
+        technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'GraphQL']
+      },
+      {
+        company: t('experience.experiences.lasVillas.company'),
+        position: t('experience.experiences.lasVillas.position'),
+        period: t('experience.experiences.lasVillas.period'),
+        location: t('experience.experiences.lasVillas.location'),
+        description: t('experience.experiences.lasVillas.description'),
+        achievements: getAchievements('experience.experiences.lasVillas.achievements'),
+        technologies: ['React', 'JavaScript', 'Redux', 'Material-UI', 'REST APIs']
+      }
+    ];
+  };
+
+  const experiences = getExperiences();
 
   return (
     <section id="experience" className="py-24 relative overflow-hidden">
@@ -40,11 +41,11 @@ export default function Experience() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Work <span className="text-gradient">Experience</span>
+              {t('experience.title')} <span className="text-gradient">{t('experience.titleHighlight')}</span>
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              Professional journey building impactful web solutions
+              {t('experience.description')}
             </p>
           </div>
 
@@ -82,7 +83,7 @@ export default function Experience() {
                 <p className="text-gray-300 mb-6 leading-relaxed">{exp.description}</p>
 
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-primary-400 mb-3">Key Achievements:</h4>
+                  <h4 className="text-lg font-semibold text-primary-400 mb-3">{t('experience.keyAchievements')}</h4>
                   <ul className="space-y-2">
                     {exp.achievements.map((achievement, achIndex) => (
                       <li key={achIndex} className="flex items-start gap-3">
@@ -94,7 +95,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-400 mb-3">Technologies Used:</h4>
+                  <h4 className="text-sm font-semibold text-gray-400 mb-3">{t('experience.technologiesUsed')}</h4>
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, techIndex) => (
                       <span

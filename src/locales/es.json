@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "Eduardo José Lara Da Silva",
+    "title": "Desarrollador Frontend | React & TypeScript",
+    "description": "Construyendo experiencias web dinámicas y escalables con tecnologías modernas. Apasionado por crear interfaces de usuario intuitivas que los usuarios aman.",
+    "downloadCV": "Descargar CV",
+    "hireMe": "Contrátame",
+    "seeMyWork": "Ver Mi Trabajo"
+  },
+  "about": {
+    "title": "Acerca de",
+    "titleHighlight": "Mí",
+    "description1": "Soy un Desarrollador Frontend apasionado con un fuerte enfoque en la construcción de aplicaciones web modernas, responsivas y centradas en el usuario. Mi viaje en el desarrollo web ha sido impulsado por un amor genuino por crear experiencias digitales perfectas.",
+    "description2": "Con experiencia en React, TypeScript y frameworks CSS modernos, transformo requisitos complejos en soluciones elegantes. Estoy constantemente aprendiendo y adaptándome a nuevas tecnologías para mantenerme a la vanguardia del desarrollo web.",
+    "description3": "Mi enfoque proactivo y atención al detalle aseguran que cada proyecto en el que trabajo no solo cumpla con los requisitos técnicos, sino que también ofrezca una experiencia de usuario excepcional.",
+    "experience": "Experiencia",
+    "projectsCompleted": "Proyectos Completados",
+    "technologiesMastered": "Tecnologías Dominadas",
+    "location": "Ubicación",
+    "availableRemote": "Disponible Remoto",
+    "highlights": {
+      "cleanCode": {
+        "title": "Código Limpio",
+        "description": "Escribiendo código mantenible y escalable con mejores prácticas"
+      },
+      "uiux": {
+        "title": "Enfoque UI/UX",
+        "description": "Creando experiencias de usuario hermosas e intuitivas"
+      },
+      "performance": {
+        "title": "Rendimiento",
+        "description": "Optimizando aplicaciones para velocidad y eficiencia"
+      },
+      "teamPlayer": {
+        "title": "Jugador de Equipo",
+        "description": "Enfoque colaborativo con fuertes habilidades de comunicación"
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades y",
+    "titleHighlight": "Tecnologías",
+    "description": "Aquí están las tecnologías y herramientas con las que trabajo para crear experiencias web increíbles",
+    "legend": {
+      "expert": "Experto — Uso diario, puedo liderar proyectos",
+      "advanced": "Avanzado — Trabajo cómodo y con autonomía",
+      "intermediate": "Intermedio — Buen dominio, sigo aprendiendo"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend y Base de Datos"
+    },
+    "levels": {
+      "expert": "Experto",
+      "advanced": "Avanzado",
+      "intermediate": "Intermedio"
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "titleHighlight": "Laboral",
+    "description": "Trayectoria profesional construyendo soluciones web impactantes",
+    "keyAchievements": "Logros Principales:",
+    "technologiesUsed": "Tecnologías Utilizadas:",
+    "experiences": {
+      "clorian": {
+        "company": "Clorian",
+        "position": "Desarrollador Frontend",
+        "period": "2022 - Presente",
+        "location": "Remoto",
+        "description": "Liderando iniciativas de desarrollo frontend, construyendo aplicaciones React escalables con TypeScript. Implementé sistemas de diseño modernos y optimicé el rendimiento en múltiples proyectos.",
+        "achievements": [
+          "Reduje el tiempo de carga de páginas en un 40% mediante división de código y carga diferida",
+          "Construí una librería de componentes reutilizables utilizada en más de 5 proyectos",
+          "Mentoré desarrolladores junior en mejores prácticas de React",
+          "Implementé pipelines CI/CD mejorando la eficiencia de despliegue en un 60%"
+        ]
+      },
+      "lasVillas": {
+        "company": "Las Villas",
+        "position": "Desarrollador Frontend",
+        "period": "2021 - 2022",
+        "location": "Híbrido",
+        "description": "Desarrollé aplicaciones web responsivas para plataforma de gestión inmobiliaria. Colaboré con diseñadores y equipos de backend para entregar experiencias de usuario perfectas.",
+        "achievements": [
+          "Rediseñé el dashboard principal mejorando el engagement de usuarios en un 35%",
+          "Integré APIs RESTful para gestión de contenido dinámico",
+          "Implementé diseño responsivo compatible con todos los tamaños de dispositivos",
+          "Reduje reportes de bugs en un 50% mediante pruebas exhaustivas"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "titleHighlight": "Destacados",
+    "description": "Una muestra de mi trabajo reciente y proyectos personales",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código"
+  },
+  "contact": {
+    "title": "Ponerse en",
+    "titleHighlight": "Contacto",
+    "description": "¿Listo para comenzar tu próximo proyecto? ¡Trabajemos juntos!",
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Tu Mensaje",
+      "send": "Enviar Mensaje"
+    },
+    "info": {
+      "email": "Correo",
+      "location": "Ubicación",
+      "availability": "Disponibilidad"
+    }
+  },
+  "footer": {
+    "description": "Desarrollador Frontend apasionado por crear experiencias web excepcionales.",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "followMe": "Sígueme",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "years": "Años",
+    "projects": "Proyectos"
+  }
+}
