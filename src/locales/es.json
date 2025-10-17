@@ -4,15 +4,13 @@
     "about": "Acerca",
     "skills": "Habilidades",
     "experience": "Experiencia",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "projects": "Proyectos"
   },
   "hero": {
     "name": "Eduardo José Lara Da Silva",
     "title": "Desarrollador Frontend | React & TypeScript",
     "description": "Construyendo experiencias web dinámicas y escalables con tecnologías modernas. Apasionado por crear interfaces de usuario intuitivas que los usuarios aman.",
     "downloadCV": "Descargar CV",
-    "hireMe": "Contrátame",
     "seeMyWork": "Ver Mi Trabajo"
   },
   "about": {
@@ -108,46 +106,6 @@
     "viewProject": "Demo",
     "viewCode": "Código",
     "viewMoreGithub": "Ver Más en GitHub"
-  },
-  "contact": {
-    "title": "Ponerse en",
-    "titleHighlight": "Contacto",
-    "description": "¿Listo para comenzar tu próximo proyecto? ¡Trabajemos juntos!",
-    "contactInfo": "Información de Contacto",
-    "connectWithMe": "Conéctate Conmigo",
-    "sendMessage": "Envíame un Mensaje",
-    "successMessage": "¡Gracias por tu mensaje! Te responderé pronto.",
-    "form": {
-      "name": "Tu Nombre",
-      "email": "Tu Correo Electrónico",
-      "subject": "Asunto",
-      "message": "Mensaje",
-      "send": "Enviar Mensaje",
-      "sending": "Enviando...",
-      "namePlaceholder": "Juan Pérez",
-      "emailPlaceholder": "juan@ejemplo.com",
-      "subjectPlaceholder": "Consulta de Proyecto",
-      "messagePlaceholder": "Cuéntame sobre tu proyecto..."
-    },
-    "info": {
-      "email": "Correo",
-      "phone": "Teléfono",
-      "phoneValue": "+1 (555) 123-4567",
-      "location": "Ubicación",
-      "availability": "Disponible Remoto"
-    },
-    "social": {
-      "linkedin": "LinkedIn",
-      "github": "GitHub"
-    },
-    "validation": {
-      "nameRequired": "El nombre es requerido",
-      "emailRequired": "El correo electrónico es requerido",
-      "emailInvalid": "Formato de correo electrónico inválido",
-      "subjectRequired": "El asunto es requerido",
-      "messageRequired": "El mensaje es requerido",
-      "messageMinLength": "El mensaje debe tener al menos 10 caracteres"
-    }
   },
   "footer": {
     "description": "Desarrollador Frontend apasionado por crear experiencias web hermosas y funcionales.",

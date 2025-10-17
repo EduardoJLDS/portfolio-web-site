@@ -7,7 +7,6 @@ export const Experience: React.FC = () => {
   const getExperiences = () => {
     const getAchievements = (companyKey: string): string[] => {
     const achievementsKey = `experience.experiences.${companyKey}.achievements`;
-    console.log(tArray(achievementsKey));
     return tArray(achievementsKey);
   };
     return [

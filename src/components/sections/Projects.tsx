@@ -1,19 +1,20 @@
 import { ExternalLink, Github, Code2 } from 'lucide-react';
 import { useLanguage } from '../../hooks';
+import techGearImage from '../../assets/images/tech-gear.png';
 
 export default function Projects() {
 const { t } = useLanguage();
 
   const projects = [
     {
-      title: 'E-Commerce Dashboard',
-      description: 'Comprehensive admin dashboard for managing products, orders, and analytics with real-time updates and interactive charts.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'TypeScript', 'Tailwind', 'Supabase', 'Chart.js'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-      featured: true
-    }
+  title: "Tech & Gear Emporium",
+  description: "Modern e-commerce application for tech products featuring interactive shopping cart, product catalog with quantity selection, and comprehensive testing suite. Built with React and TypeScript for optimal performance and type safety.",
+  image: techGearImage,
+  technologies: ["React", "TypeScript", "Zustand", "Vitest", "Testing Library", "CSS3", "Vite", "ESLint"],
+  github: "https://github.com/EduardoJLDS/Tech---Gear-Emporium",
+  demo: "https://tech-gear-emporium.vercel.app/",
+  featured: true
+}
   ];
 
   return (
@@ -41,6 +42,9 @@ const { t } = useLanguage();
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
                   />
                   {project.featured && (
                     <div className="absolute top-4 right-4 bg-gradient-primary px-3 py-1 rounded-full text-sm font-semibold">

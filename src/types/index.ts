@@ -1,5 +1,3 @@
-// Common types for the portfolio website
-
 export interface Project {
   id: string;
   title: string;
@@ -24,13 +22,6 @@ export interface Skill {
   name: string;
   level: number; // 1-100
   category: 'frontend' | 'backend' | 'tools' | 'other';
-}
-
-export interface ContactForm {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
 }
 
 export interface SocialLink {

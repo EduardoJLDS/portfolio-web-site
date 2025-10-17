@@ -1,7 +1,9 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "eduardo-portfolio-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing frontend development skills",
+  "author": "Eduardo José Lara Da Silva",
   "type": "module",
   "scripts": {
     "dev": "vite",

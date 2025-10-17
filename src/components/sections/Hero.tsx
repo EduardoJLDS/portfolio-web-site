@@ -11,12 +11,11 @@ export default function Hero() {
     const fileName = `cv-${lang}.pdf`;
 
     const link = document.createElement("a");
-    link.href = `/src/assets/CVFiles/${fileName}`;
+    link.href = `/assets/CVFiles/${fileName}`;
     link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    console.log(`Downloading ${fileName} - Current language: ${lang}`);
   };
   
   return (
@@ -50,9 +49,6 @@ export default function Hero() {
                 <Download size={20} className="group-hover:translate-y-1 transition-transform" />
               </span>
             </button>
-            <a href="#contact" className="card-glass px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-all duration-300">
-              {t('hero.hireMe')}
-            </a>
             <a href="#projects" className="card-glass px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-all duration-300">
               {t('hero.seeMyWork')}
             </a>

@@ -5,14 +5,16 @@ import {
   SiNextdotjs, 
   SiTailwindcss, 
   SiJavascript, 
-  SiHtml5, 
+  SiHtml5,
+  SiCss3, 
   SiNodedotjs, 
   SiPostgresql, 
   SiSupabase, 
-  SiGraphql,
-  SiGit
+  SiGit,
+  SiTestinglibrary,
+  SiOpenapiinitiative
 } from 'react-icons/si';
-import { Database, Server, Code2 } from 'lucide-react';
+import { Database, Server, Code2, Layers } from 'lucide-react';
 
 export default function Skills() {
   const { t } = useLanguage();
@@ -41,18 +43,21 @@ export default function Skills() {
   const frontendSkills = [
     { name: 'React', level: 'expert', icon: SiReact },
     { name: 'TypeScript', level: 'advanced', icon: SiTypescript },
-    { name: 'Next.js', level: 'advanced', icon: SiNextdotjs },
-    { name: 'Tailwind CSS', level: 'expert', icon: SiTailwindcss },
     { name: 'JavaScript', level: 'expert', icon: SiJavascript },
-    { name: 'HTML5 & CSS3', level: 'expert', icon: SiHtml5 }
+    { name: 'Next.js', level: 'advanced', icon: SiNextdotjs },
+    { name: 'HTML5', level: 'expert', icon: SiHtml5 },
+    { name: 'CSS3', level: 'expert', icon: SiCss3 },
+    { name: 'Tailwind CSS', level: 'expert', icon: SiTailwindcss },
+    { name: 'Zustand', level: 'intermediate', icon: Layers },
+    { name: 'Vitest', level: 'intermediate', icon: SiTestinglibrary }
   ];
 
   const backendSkills = [
     { name: 'Node.js', level: 'advanced', icon: SiNodedotjs },
+    { name: 'REST APIs', level: 'advanced', icon: Server },
     { name: 'PostgreSQL', level: 'intermediate', icon: SiPostgresql },
     { name: 'Supabase', level: 'advanced', icon: SiSupabase },
-    { name: 'REST APIs', level: 'advanced', icon: Server },
-    { name: 'GraphQL', level: 'intermediate', icon: SiGraphql },
+    { name: 'Swagger', level: 'intermediate', icon: SiOpenapiinitiative },
     { name: 'Git & GitHub', level: 'expert', icon: SiGit }
   ];
 

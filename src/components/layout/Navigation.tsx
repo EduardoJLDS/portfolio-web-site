@@ -22,8 +22,7 @@ export default function Navigation() {
     { href: '#about', label: t('nav.about') },
     { href: '#skills', label: t('nav.skills') },
     { href: '#experience', label: t('nav.experience') },
-    { href: '#projects', label: t('nav.projects') },
-    { href: '#contact', label: t('nav.contact') }
+    { href: '#projects', label: t('nav.projects') }
   ];
 
   const handleLinkClick = () => {

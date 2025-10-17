@@ -4,15 +4,13 @@
     "about": "About",
     "skills": "Skills",
     "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
+    "projects": "Projects"
   },
   "hero": {
     "name": "Eduardo José Lara Da Silva",
     "title": "Frontend Developer | React & TypeScript",
     "description": "Building dynamic and scalable web experiences with modern technologies. Passionate about creating intuitive user interfaces that users love.",
     "downloadCV": "Download CV",
-    "hireMe": "Hire Me",
     "seeMyWork": "See My Work"
   },
   "about": {
@@ -108,46 +106,6 @@
     "viewProject": "Demo",
     "viewCode": "Code",
     "viewMoreGithub": "View More on GitHub"
-  },
-  "contact": {
-    "title": "Get In",
-    "titleHighlight": "Touch",
-    "description": "Ready to start your next project? Let's work together!",
-    "contactInfo": "Contact Information",
-    "connectWithMe": "Connect With Me",
-    "sendMessage": "Send Me a Message",
-    "successMessage": "Thank you for your message! I'll get back to you soon.",
-    "form": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "namePlaceholder": "John Doe",
-      "emailPlaceholder": "john@example.com",
-      "subjectPlaceholder": "Project Inquiry",
-      "messagePlaceholder": "Tell me about your project..."
-    },
-    "info": {
-      "email": "Email",
-      "phone": "Phone",
-      "phoneValue": "+1 (555) 123-4567",
-      "location": "Location",
-      "availability": "Available Remote"
-    },
-    "social": {
-      "linkedin": "LinkedIn",
-      "github": "GitHub"
-    },
-    "validation": {
-      "nameRequired": "Name is required",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Invalid email format",
-      "subjectRequired": "Subject is required",
-      "messageRequired": "Message is required",
-      "messageMinLength": "Message must be at least 10 characters"
-    }
   },
   "footer": {
     "description": "Frontend Developer passionate about creating beautiful and functional web experiences.",
