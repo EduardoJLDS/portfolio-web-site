@@ -74,21 +74,22 @@
       "clorian": {
         "company": "Clorian",
         "position": "Desarrollador Frontend",
-        "period": "2022 - Presente",
+        "period": "2024 - Presente",
         "location": "Remoto",
         "description": "Liderando iniciativas de desarrollo frontend, construyendo aplicaciones React escalables con TypeScript. Implementé sistemas de diseño modernos y optimicé el rendimiento en múltiples proyectos.",
         "achievements": [
           "Reduje el tiempo de carga de páginas en un 40% mediante división de código y carga diferida",
-          "Construí una librería de componentes reutilizables utilizada en más de 5 proyectos",
-          "Mentoré desarrolladores junior en mejores prácticas de React",
-          "Implementé pipelines CI/CD mejorando la eficiencia de despliegue en un 60%"
+          "Construí una librería de componentes reutilizables utilizada en más de 3 proyectos",
+          "Apliqué Vitest y otras herramientas de testing para asegurar la calidad del código y reducir errores en producción.",
+          "Implementé pipelines CI/CD mejorando la eficiencia de despliegue en un 60%",
+          "Integré APIs externas para enriquecer la funcionalidad de las aplicaciones web, asegurando una comunicación fluida entre el frontend y los servicios de terceros."
         ]
       },
       "lasVillas": {
         "company": "Las Villas",
         "position": "Desarrollador Frontend",
-        "period": "2021 - 2022",
-        "location": "Híbrido",
+        "period": "2023 - 2024",
+        "location": "Remoto",
         "description": "Desarrollé aplicaciones web responsivas para plataforma de gestión inmobiliaria. Colaboré con diseñadores y equipos de backend para entregar experiencias de usuario perfectas.",
         "achievements": [
           "Rediseñé el dashboard principal mejorando el engagement de usuarios en un 35%",
@@ -103,32 +104,60 @@
     "title": "Proyectos",
     "titleHighlight": "Destacados",
     "description": "Una muestra de mi trabajo reciente y proyectos personales",
-    "viewProject": "Ver Proyecto",
-    "viewCode": "Ver Código"
+    "featured": "Destacado",
+    "viewProject": "Demo",
+    "viewCode": "Código",
+    "viewMoreGithub": "Ver Más en GitHub"
   },
   "contact": {
     "title": "Ponerse en",
     "titleHighlight": "Contacto",
     "description": "¿Listo para comenzar tu próximo proyecto? ¡Trabajemos juntos!",
+    "contactInfo": "Información de Contacto",
+    "connectWithMe": "Conéctate Conmigo",
+    "sendMessage": "Envíame un Mensaje",
+    "successMessage": "¡Gracias por tu mensaje! Te responderé pronto.",
     "form": {
-      "name": "Nombre Completo",
-      "email": "Correo Electrónico",
+      "name": "Tu Nombre",
+      "email": "Tu Correo Electrónico",
       "subject": "Asunto",
-      "message": "Tu Mensaje",
-      "send": "Enviar Mensaje"
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "namePlaceholder": "Juan Pérez",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "subjectPlaceholder": "Consulta de Proyecto",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto..."
     },
     "info": {
       "email": "Correo",
+      "phone": "Teléfono",
+      "phoneValue": "+1 (555) 123-4567",
       "location": "Ubicación",
-      "availability": "Disponibilidad"
+      "availability": "Disponible Remoto"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "validation": {
+      "nameRequired": "El nombre es requerido",
+      "emailRequired": "El correo electrónico es requerido",
+      "emailInvalid": "Formato de correo electrónico inválido",
+      "subjectRequired": "El asunto es requerido",
+      "messageRequired": "El mensaje es requerido",
+      "messageMinLength": "El mensaje debe tener al menos 10 caracteres"
     }
   },
   "footer": {
-    "description": "Desarrollador Frontend apasionado por crear experiencias web excepcionales.",
+    "description": "Desarrollador Frontend apasionado por crear experiencias web hermosas y funcionales.",
     "quickLinks": "Enlaces Rápidos",
-    "contact": "Contacto",
+    "contact": "Ponerse en Contacto",
+    "availability": "Disponible para proyectos freelance y oportunidades de tiempo completo.",
     "followMe": "Sígueme",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Construido con",
+    "technologies": "usando React y TypeScript"
   },
   "common": {
     "years": "Años",

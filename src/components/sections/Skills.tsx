@@ -71,7 +71,6 @@ export default function Skills() {
           <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 group-hover:from-gray-700 group-hover:to-gray-800 transition-all duration-300">
             <IconComponent className={`w-5 h-5 ${levelConfig.color}`} />
           </div>
-          
           <div className="flex-1">
             <h4 className="text-white font-semibold text-sm">{skill.name}</h4>
             <div className="flex items-center space-x-2 mt-1">
@@ -82,7 +81,6 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-600/0 via-blue-600/0 to-purple-600/0 group-hover:from-purple-600/5 group-hover:via-blue-600/5 group-hover:to-purple-600/5 transition-all duration-300" />
       </div>
     );
@@ -92,7 +90,6 @@ export default function Skills() {
     <section id="skills" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-slate-900/50 to-gray-950"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/10 via-transparent to-blue-900/10"></div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -103,7 +100,6 @@ export default function Skills() {
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
               {t('skills.description')}
             </p>
-            
             <div className="inline-flex flex-wrap gap-4 p-4 rounded-xl bg-gray-900/50 backdrop-blur-sm border border-gray-700/30">
               <div className="flex items-center space-x-2 text-sm">
                 <span>🟣</span>
@@ -119,7 +115,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div className="flex items-center space-x-3 mb-6">
@@ -130,14 +125,12 @@ export default function Skills() {
                   {t('skills.categories.frontend')}
                 </h3>
               </div>
-              
               <div className="grid gap-4">
                 {frontendSkills.map((skill, index) => (
                   <SkillCard key={index} skill={skill} />
                 ))}
               </div>
             </div>
-
             <div className="space-y-6">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
@@ -147,7 +140,6 @@ export default function Skills() {
                   {t('skills.categories.backend')}
                 </h3>
               </div>
-              
               <div className="grid gap-4">
                 {backendSkills.map((skill, index) => (
                   <SkillCard key={index} skill={skill} />

@@ -5,19 +5,20 @@ export const Experience: React.FC = () => {
   const { t, tArray } = useLanguage();
 
   const getExperiences = () => {
-    // Helper function to safely parse arrays from translations
-  const getAchievements = (companyKey: string): string[] => {
+    const getAchievements = (companyKey: string): string[] => {
     const achievementsKey = `experience.experiences.${companyKey}.achievements`;
+    console.log(tArray(achievementsKey));
     return tArray(achievementsKey);
-  };    return [
+  };
+    return [
       {
         company: t('experience.experiences.clorian.company'),
         position: t('experience.experiences.clorian.position'),
         period: t('experience.experiences.clorian.period'),
         location: t('experience.experiences.clorian.location'),
         description: t('experience.experiences.clorian.description'),
-        achievements: getAchievements('experience.experiences.clorian.achievements'),
-        technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'GraphQL']
+        achievements: getAchievements('clorian'),
+        technologies: ['React', 'TypeScript', 'SASS', 'Vitest', 'Tauri']
       },
       {
         company: t('experience.experiences.lasVillas.company'),
@@ -25,18 +26,16 @@ export const Experience: React.FC = () => {
         period: t('experience.experiences.lasVillas.period'),
         location: t('experience.experiences.lasVillas.location'),
         description: t('experience.experiences.lasVillas.description'),
-        achievements: getAchievements('experience.experiences.lasVillas.achievements'),
+        achievements: getAchievements('lasVillas'),
         technologies: ['React', 'JavaScript', 'Redux', 'Material-UI', 'REST APIs']
       }
     ];
   };
-
   const experiences = getExperiences();
 
   return (
     <section id="experience" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent-950/10 to-transparent"></div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -48,7 +47,6 @@ export const Experience: React.FC = () => {
               {t('experience.description')}
             </p>
           </div>
-
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <div
@@ -67,7 +65,6 @@ export const Experience: React.FC = () => {
                       </div>
                     </div>
                   </div>
-
                   <div className="flex flex-col md:items-end gap-2 mt-4 md:mt-0">
                     <div className="flex items-center gap-2 text-primary-400">
                       <Calendar size={18} />
@@ -79,9 +76,7 @@ export const Experience: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
                 <p className="text-gray-300 mb-6 leading-relaxed">{exp.description}</p>
-
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-primary-400 mb-3">{t('experience.keyAchievements')}</h4>
                   <ul className="space-y-2">
@@ -93,7 +88,6 @@ export const Experience: React.FC = () => {
                     ))}
                   </ul>
                 </div>
-
                 <div>
                   <h4 className="text-sm font-semibold text-gray-400 mb-3">{t('experience.technologiesUsed')}</h4>
                   <div className="flex flex-wrap gap-2">

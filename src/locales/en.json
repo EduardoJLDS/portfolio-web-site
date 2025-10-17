@@ -74,21 +74,22 @@
       "clorian": {
         "company": "Clorian",
         "position": "Frontend Developer",
-        "period": "2022 - Present",
+        "period": "2024 - Present",
         "location": "Remote",
         "description": "Leading frontend development initiatives, building scalable React applications with TypeScript. Implemented modern design systems and optimized performance across multiple projects.",
         "achievements": [
           "Reduced page load time by 40% through code splitting and lazy loading",
-          "Built reusable component library used across 5+ projects",
-          "Mentored junior developers in React best practices",
-          "Implemented CI/CD pipelines improving deployment efficiency by 60%"
+          "Built reusable component library used across 3+ projects",
+          "Applied Vitest and other testing tools to guarantee code quality and reduce production errors.",
+          "Implemented CI/CD pipelines improving deployment efficiency by 60%",
+          "Integrated external APIs to enrich web application functionality, ensuring smooth communication between frontend and backend systems"
         ]
       },
       "lasVillas": {
         "company": "Las Villas",
         "position": "Frontend Developer",
-        "period": "2021 - 2022",
-        "location": "Hybrid",
+        "period": "2023 - 2024",
+        "location": "Remote",
         "description": "Developed responsive web applications for real estate management platform. Collaborated with designers and backend teams to deliver seamless user experiences.",
         "achievements": [
           "Redesigned main dashboard improving user engagement by 35%",
@@ -103,32 +104,60 @@
     "title": "Featured",
     "titleHighlight": "Projects",
     "description": "A showcase of my recent work and personal projects",
-    "viewProject": "View Project",
-    "viewCode": "View Code"
+    "featured": "Featured",
+    "viewProject": "Demo",
+    "viewCode": "Code",
+    "viewMoreGithub": "View More on GitHub"
   },
   "contact": {
     "title": "Get In",
     "titleHighlight": "Touch",
     "description": "Ready to start your next project? Let's work together!",
+    "contactInfo": "Contact Information",
+    "connectWithMe": "Connect With Me",
+    "sendMessage": "Send Me a Message",
+    "successMessage": "Thank you for your message! I'll get back to you soon.",
     "form": {
-      "name": "Full Name",
-      "email": "Email Address",
+      "name": "Your Name",
+      "email": "Your Email",
       "subject": "Subject",
-      "message": "Your Message",
-      "send": "Send Message"
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "subjectPlaceholder": "Project Inquiry",
+      "messagePlaceholder": "Tell me about your project..."
     },
     "info": {
       "email": "Email",
+      "phone": "Phone",
+      "phoneValue": "+1 (555) 123-4567",
       "location": "Location",
-      "availability": "Availability"
+      "availability": "Available Remote"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email format",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required",
+      "messageMinLength": "Message must be at least 10 characters"
     }
   },
   "footer": {
-    "description": "Frontend Developer passionate about creating exceptional web experiences.",
+    "description": "Frontend Developer passionate about creating beautiful and functional web experiences.",
     "quickLinks": "Quick Links",
-    "contact": "Contact",
+    "contact": "Get In Touch",
+    "availability": "Available for freelance projects and full-time opportunities.",
     "followMe": "Follow Me",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "builtWith": "Built with",
+    "technologies": "using React & TypeScript"
   },
   "common": {
     "years": "Years",

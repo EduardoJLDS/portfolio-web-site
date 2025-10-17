@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react';
+import { useLanguage } from '../../hooks';
 
 export default function Contact() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,23 +19,23 @@ export default function Contact() {
     const newErrors: Record<string, string> = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = t('contact.validation.nameRequired');
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = t('contact.validation.emailRequired');
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Invalid email format';
+      newErrors.email = t('contact.validation.emailInvalid');
     }
 
     if (!formData.subject.trim()) {
-      newErrors.subject = 'Subject is required';
+      newErrors.subject = t('contact.validation.subjectRequired');
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = t('contact.validation.messageRequired');
     } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'Message must be at least 10 characters';
+      newErrors.message = t('contact.validation.messageMinLength');
     }
 
     setErrors(newErrors);
@@ -71,20 +73,20 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'eduardo.lara@example.com',
-      link: 'mailto:eduardo.lara@example.com'
+      label: t('contact.info.email'),
+      value: 'eduardojoselara12@gmail.com',
+      link: 'mailto:eduardojoselara12@gmail.com'
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      label: t('contact.info.phone'),
+      value: t('contact.info.phoneValue'),
+      link: 'tel:+1234567890'
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'Available Remote',
+      label: t('contact.info.location'),
+      value: t('contact.info.availability'),
       link: null
     }
   ];
@@ -92,23 +94,21 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-primary-950/20 via-transparent to-transparent"></div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Get In <span className="text-gradient">Touch</span>
+              {t('contact.title')} <span className="text-gradient">{t('contact.titleHighlight')}</span>
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              Have a project in mind or want to collaborate? Feel free to reach out!
+              {t('contact.description')}
             </p>
           </div>
-
           <div className="grid md:grid-cols-5 gap-8">
             <div className="md:col-span-2 space-y-6">
               <div className="card-glass p-8">
-                <h3 className="text-2xl font-bold mb-6 text-gradient">Contact Information</h3>
+                <h3 className="text-2xl font-bold mb-6 text-gradient">{t('contact.contactInfo')}</h3>
                 <div className="space-y-4">
                   {contactInfo.map((info, index) => (
                     <div key={index} className="flex items-start gap-4">
@@ -132,9 +132,8 @@ export default function Contact() {
                   ))}
                 </div>
               </div>
-
               <div className="card-glass p-8">
-                <h3 className="text-xl font-bold mb-4 text-gradient">Connect With Me</h3>
+                <h3 className="text-xl font-bold mb-4 text-gradient">{t('contact.connectWithMe')}</h3>
                 <div className="flex gap-4">
                   <a
                     href="https://linkedin.com/in/eduardo-lara"
@@ -143,35 +142,33 @@ export default function Contact() {
                     className="flex-1 flex items-center justify-center gap-2 py-3 card-glass hover:bg-white/10 rounded-lg transition-all duration-300"
                   >
                     <Linkedin size={20} />
-                    <span className="text-sm">LinkedIn</span>
+                    <span className="text-sm">{t('contact.social.linkedin')}</span>
                   </a>
                   <a
-                    href="https://github.com/eduardolara"
+                    href="https://github.com/EduardoJLDS"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-2 py-3 card-glass hover:bg-white/10 rounded-lg transition-all duration-300"
                   >
                     <Github size={20} />
-                    <span className="text-sm">GitHub</span>
+                    <span className="text-sm">{t('contact.social.github')}</span>
                   </a>
                 </div>
               </div>
             </div>
-
             <div className="md:col-span-3">
               <form onSubmit={handleSubmit} className="card-glass p-8">
-                <h3 className="text-2xl font-bold mb-6 text-gradient">Send Me a Message</h3>
+                <h3 className="text-2xl font-bold mb-6 text-gradient">{t('contact.sendMessage')}</h3>
 
                 {submitSuccess && (
                   <div className="mb-6 p-4 bg-green-500/10 border border-green-500/30 rounded-lg text-green-400">
-                    Thank you for your message! I'll get back to you soon.
+                    {t('contact.successMessage')}
                   </div>
                 )}
-
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                      Your Name
+                      {t('contact.form.name')}
                     </label>
                     <input
                       type="text"
@@ -182,14 +179,13 @@ export default function Contact() {
                       className={`w-full px-4 py-3 bg-gray-900/50 border ${
                         errors.name ? 'border-red-500' : 'border-gray-700'
                       } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-gray-200`}
-                      placeholder="John Doe"
+                      placeholder={t('contact.form.namePlaceholder')}
                     />
                     {errors.name && <p className="mt-1 text-sm text-red-400">{errors.name}</p>}
                   </div>
-
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                      Your Email
+                      {t('contact.form.email')}
                     </label>
                     <input
                       type="email"
@@ -200,15 +196,14 @@ export default function Contact() {
                       className={`w-full px-4 py-3 bg-gray-900/50 border ${
                         errors.email ? 'border-red-500' : 'border-gray-700'
                       } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-gray-200`}
-                      placeholder="john@example.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                     />
                     {errors.email && <p className="mt-1 text-sm text-red-400">{errors.email}</p>}
                   </div>
                 </div>
-
                 <div className="mb-6">
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                    Subject
+                    {t('contact.form.subject')}
                   </label>
                   <input
                     type="text"
@@ -219,14 +214,13 @@ export default function Contact() {
                     className={`w-full px-4 py-3 bg-gray-900/50 border ${
                       errors.subject ? 'border-red-500' : 'border-gray-700'
                     } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-gray-200`}
-                    placeholder="Project Inquiry"
+                    placeholder={t('contact.form.subjectPlaceholder')}
                   />
                   {errors.subject && <p className="mt-1 text-sm text-red-400">{errors.subject}</p>}
                 </div>
-
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                    Message
+                    {t('contact.form.message')}
                   </label>
                   <textarea
                     id="message"
@@ -237,11 +231,10 @@ export default function Contact() {
                     className={`w-full px-4 py-3 bg-gray-900/50 border ${
                       errors.message ? 'border-red-500' : 'border-gray-700'
                     } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-gray-200 resize-none`}
-                    placeholder="Tell me about your project..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   ></textarea>
                   {errors.message && <p className="mt-1 text-sm text-red-400">{errors.message}</p>}
                 </div>
-
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -250,11 +243,11 @@ export default function Contact() {
                   {isSubmitting ? (
                     <>
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      Sending...
+                      {t('contact.form.sending')}
                     </>
                   ) : (
                     <>
-                      Send Message
+                      {t('contact.form.send')}
                       <Send size={20} />
                     </>
                   )}

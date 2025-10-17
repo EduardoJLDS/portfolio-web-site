@@ -30,24 +30,19 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-gray-950/60"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900/20 via-transparent to-transparent"></div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 inline-block">
           </div>
-
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in whitespace-nowrap">
             {t('hero.name')}
           </h1>
-
           <div className="text-2xl md:text-3xl font-semibold mb-4 text-gradient">
             {t('hero.title')}
           </div>
-
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
             {t('hero.description')}
           </p>
-
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <button onClick={handleDownload} className="btn-primary group">
               <span className="flex items-center gap-2">
@@ -62,7 +57,6 @@ export default function Hero() {
               {t('hero.seeMyWork')}
             </a>
           </div>
-
           <div className="flex gap-6 justify-center">
             <a
               href="https://github.com/EduardoJLDS"
@@ -89,7 +83,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
       <a
         href="#about"
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"

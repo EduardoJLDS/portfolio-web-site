@@ -26,13 +26,11 @@ interface LanguageProviderProps {
 
 export function LanguageProvider({ children }: LanguageProviderProps) {
   const [language, setLanguage] = useState<Language>(() => {
-    // Get language from localStorage or default to 'en'
     const savedLanguage = localStorage.getItem('portfolio-language') as Language;
     return savedLanguage || 'en';
   });
 
   useEffect(() => {
-    // Save language to localStorage whenever it changes
     localStorage.setItem('portfolio-language', language);
   }, [language]);
 
@@ -45,7 +43,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
         value = value[k] as Record<string, unknown> | string;
       } else {
         console.warn(`Translation key "${key}" not found for language "${language}"`);
-        return key; // Return the key itself if translation is not found
+        return key;
       }
     }
 
@@ -61,17 +59,17 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
         value = (value as Record<string, unknown>)[k];
       } else {
         console.warn(`Translation key "${key}" not found for language "${language}"`);
-        return []; // Return empty array if translation is not found
+        return [];
       }
     }
 
     if (Array.isArray(value)) {
       return value as string[];
     } else if (typeof value === 'string') {
-      return [value]; // Convert single string to array
+      return [value];
     }
     
-    return []; // Return empty array if value is not string or array
+    return []; 
   };
 
   const contextValue: LanguageContextType = {

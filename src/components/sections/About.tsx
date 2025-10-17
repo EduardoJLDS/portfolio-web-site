@@ -30,7 +30,6 @@ export default function About() {
   return (
     <section id="about" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-950/20 to-transparent"></div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -39,7 +38,6 @@ export default function About() {
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           </div>
-
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
@@ -52,7 +50,6 @@ export default function About() {
                 {t('about.description3')}
               </p>
             </div>
-
             <div className="card-glass p-8">
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
@@ -77,7 +74,6 @@ export default function About() {
               </div>
             </div>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((item, index) => (
               <div

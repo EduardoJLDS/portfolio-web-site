@@ -1,5 +1,3 @@
-// Constants for the portfolio website
-
 export const PERSONAL_INFO = {
   name: 'Eduardo José Lara Da Silva',
   title: 'Frontend Developer | React & TypeScript',
@@ -11,7 +9,7 @@ export const PERSONAL_INFO = {
 } as const;
 
 export const SOCIAL_LINKS = {
-  github: 'https://github.com/eduardolara',
+  github: 'https://github.com/EduardoJLDS',
   linkedin: 'https://linkedin.com/in/eduardo-lara',
   email: 'mailto:eduardo@example.com',
 } as const;

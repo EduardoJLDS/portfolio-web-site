@@ -5,7 +5,6 @@ import {
   Skills,
   Experience,
   Projects,
-  Contact,
   Footer,
 } from './components';
 import { LanguageProvider } from './context/LanguageProvider';
@@ -21,7 +20,6 @@ function App() {
           <Skills />
           <Experience />
           <Projects />
-          <Contact />
         </main>
         <Footer />
       </div>
