@@ -42,9 +42,8 @@ const { t } = useLanguage();
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
+                    loading="lazy"
+                    decoding="async"
                   />
                   {project.featured && (
                     <div className="absolute top-4 right-4 bg-gradient-primary px-3 py-1 rounded-full text-sm font-semibold">

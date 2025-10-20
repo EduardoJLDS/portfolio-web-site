@@ -25,6 +25,9 @@ export default function Hero() {
           src={heroBackgroundGif} 
           alt="Hero background animation" 
           className="w-full h-full object-cover opacity-100"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
       </div>
       <div className="absolute inset-0 bg-gray-950/60"></div>
@@ -33,7 +36,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 inline-block">
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in whitespace-nowrap">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             {t('hero.name')}
           </h1>
           <div className="text-2xl md:text-3xl font-semibold mb-4 text-gradient">
