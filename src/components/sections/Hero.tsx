@@ -5,7 +5,6 @@ import { useLanguage } from '../../hooks';
 
 export default function Hero() {
   const { t, language } = useLanguage();
-
   const handleDownload = () => {
     const lang = language;
     const fileName = `cv-${lang}.pdf`;
